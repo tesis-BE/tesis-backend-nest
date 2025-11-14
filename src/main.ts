@@ -16,7 +16,6 @@ async function bootstrap() {
     }),
   );
 
-  // Ejecutar seeds automáticamente si está configurado
   if (seedConfig.autoRunSeeds) {
     try {
       const seedService = app.get(SeedService);
